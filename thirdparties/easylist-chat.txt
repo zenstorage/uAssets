@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Chat Widgets
 ! Expires: 9 days
-! Last modified: Fri, 02 Aug 2024 03:08:38 +0000
+! Last modified: Mon, 16 Sep 2024 18:45:37 +0000
 ! *** easylist:template_header.txt ***
 !
 ! Please report any unblocked adverts or problems
@@ -35,6 +35,13 @@
 hp.com###chatbotToronto
 docs.aws.amazon.com###floating-experience-feature-tour-popover
 docs.aws.amazon.com###view-__module-context__-_amzn_conversational-experience-module__tandalone-0
+healthshots.com##.chatWindow
+healthshots.com##.chatbotSection
+healthshots.com##.chatbotSlider
+healthshots.com##.chatbotentrybtn
+healthshots.com##.healthshotsChannels
+healthshots.com##.secBannerWidget
+therealdeal.com##.woot-widget-bubble
 ||today.com/oli/
 ! Third-party chat
 ||247-inc.net^$third-party
@@ -105,6 +112,7 @@ docs.aws.amazon.com###view-__module-context__-_amzn_conversational-experience-mo
 ||freshchat.com^$third-party
 ||getrisk.info^$third-party
 ||gladly.com/chat-sdk/
+||globalbot.ai^$third-party
 ||goftino.com^$third-party
 ||googleapis.com/ebbot-web/
 ||gorgias.chat^$third-party
@@ -138,6 +146,7 @@ docs.aws.amazon.com###view-__module-context__-_amzn_conversational-experience-mo
 ||me-talk.ru^$third-party
 ||melibo.de^$third-party
 ||messenger.customerly.io^$third-party
+||mindbehind.com^$third-party
 ||mobilemonkey.com^$third-party
 ||my.salesforce.com/embeddedservice/
 ||mylivechat.com^$third-party
@@ -217,6 +226,7 @@ docs.aws.amazon.com###view-__module-context__-_amzn_conversational-experience-mo
 ||widgets.binotel.com/getcall/
 ||widgets.leadconnectorhq.com^
 ||worldchatbox.worldfone.vn^$third-party
+||yellowmessenger.com^$third-party
 ||zammo.ai^$third-party
 ||zdassets.com/web_widget/
 ||zohopublic.com/watchws?$third-party

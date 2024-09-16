@@ -1,6 +1,6 @@
 ! Title: uBlock filters – Unbreak
 ! Expires: 5 days
-! Last modified: Sat, 10 Aug 2024 11:14:45 +0000
+! Last modified: Mon, 16 Sep 2024 18:45:37 +0000
 ! Diff-Path: %diffpath%#ublock-unbreak
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -126,8 +126,6 @@ reyada.com#@#.ads_area
 hintergrundbild.org#@#.ads1
 @@||crackle.com/*/crypto-js.js$script,1p
 @@/cdn-cgi/pe/bag2?*optimizely.com$domain=coindesk.com
-/adstream.$badfilter
-/adstream.$domain=~adstream.com|~adstream.com.ro
 @@||ak.sail-horizon.com/scout/$script,domain=businessinsider.com
 @@||tracker.btorrent.xyz^$websocket
 @@||cloudflare.com/ajax/libs/*$script,domain=androidcentral.com
@@ -435,8 +433,6 @@ kzstock.blogspot.com#@##ad-target
 @@||readcomiconline.to/$xhr,1p
 @@||adobedtm.com^*/satellitelib-$script,domain=skysportaustria.at
 ||miniusa.com/etc/designs/mini/js/vendor/tracking/*$script,1p,redirect=noopjs
-@@||doubleclick.net/gampad/ads*nhl.com$xhr,domain=imasdk.googleapis.com
-@@||static.adsafeprotected.com/vans-adapter-google-ima.js$script,domain=nhl.com
 @@||d8rk54i4mohrb.cloudfront.net/js/video.js$script,domain=forbes.com
 ! scrolling broken drstevenlin .com
 drstevenlin.com##html:style(overflow: auto !important;)
@@ -947,7 +943,6 @@ getcoloringpages.com#@#.adsBlock
 ! alidns.com CNAME
 @@||alibaba.tanx.com^$domain=alidns.com
 @@||adobedtm.com^*/satellitelib-$script,domain=finishlibrary.steelcase.com
-|https://$xhr,3p,domain=kimcartoon.to,badfilter
 @@||mensjournal.com.cdn.ezoic.net^$domain=mensjournal.com
 ! youthhealthmag broken search
 |https://$script,3p,domain=youthhealthmag.com,badfilter
@@ -1887,7 +1882,6 @@ gloucestershirelive.co.uk##+js(set, chameleonVideo.adDisabledRequested, true)
 @@||google.com/adsense/search/ads.js$script,domain=diigo.com
 ||join.megaphonetv.com^$3p,badfilter
 @@||video.qq.com/getvinfo$script,1p
-filelu.com#@#.banner_ads
 ||arcgis.com/apps/instant/node_modules/templates-common-library/structuralFunctionality/telemetry/AppMeasurement.js$script,1p,redirect-rule=noopjs
 /google-tag-manager.min.js$script,domain=511tactical.com,redirect-rule=googletagmanager_gtm.js
 ! herz-fuer-tiere.de images hidden
@@ -1981,9 +1975,6 @@ jacksonguitars.com##+js(set, analytics, {})
 @@||tags.crwdcntrl.net^$script,domain=dailystar.co.uk|liverpoolecho.co.uk|football.london|devonlive.com|buzz.ie|inyourarea.co.uk|cornwalllive.com|coventrytelegraph.net|dublinlive.ie|glasgowlive.co.uk|kentlive.news|essexlive.news|lincolnshirelive.co.uk|insider.co.uk|bathchronicle.co.uk|birminghammail.co.uk|cheshire-live.co.uk|corkbeo.ie|crewechronicle.co.uk|croydonadvertiser.co.uk|dailypost.co.uk|dailyrecord.co.uk|derbytelegraph.co.uk|edinburghlive.co.uk|examinerlive.co.uk|gazettelive.co.uk|getreading.co.uk|getsurrey.co.uk|grimsbytelegraph.co.uk|hampshirelive.news|hulldailymail.co.uk|irishmirror.ie|liverpool.com|mylondon.news|nottinghampost.com|rossendalefreepress.co.uk|southportvisiter.co.uk|staffordshire-live.co.uk|stokesentinel.co.uk|walesonline.co.uk
 ||googleadservices.com/pagead/conversion.js$script,redirect=noop.js,domain=ncsoft.jp,important
 @@||matomo.paizo.com/piwik.js$1p
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=lifehacker.com
-@@||pubads.g.doubleclick.net/gampad/ads*lifehacker$xhr,domain=imasdk.googleapis.com
-||googlevideo.com/videoplayback?expire$media,domain=lifehacker.com,redirect=noopmp3-0.1s
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=doubtnut.com,redirect=google-ima.js,important
 ||api.doubtnut.com/v2/web-landing/web-ads-info$xhr,redirect=nooptext
 ! Event manager
@@ -1992,9 +1983,9 @@ jacksonguitars.com##+js(set, analytics, {})
 ||connatix.com^$badfilter
 ||connatix.com^$3p
 ||connatix.com^$3p,removeparam=cid
-app.kultivi.com,hollywoodreporter.com,huffpost.com,sacbee.com,w3schools.com#@#.cnx-player-wrapper
-app.kultivi.com,hollywoodreporter.com,huffpost.com,sacbee.com,w3schools.com#@#[id^="jwplayer"]
-@@||connatix.com/*connatix.player.$3p,script,domain=accesousa.com|accuweather.com|adweek.com|app.kultivi.com|bellinghamherald.com|bnd.com|bradenton.com|centredaily.com|charlotteobserver.com|easternstandardtimes.com|elnuevoherald.com|flkeysnews.com|fresnobee.com|heraldonline.com|heraldsun.com|hollywoodreporter.com|huffpost.com|idahostatesman.com|indiewire.com|islandpacket.com|interestingengineering.com|kansas.com|kansascity.com|kentucky.com|ledger-enquirer.com|loot.tv|macon.com|mahoningmatters.com|mcclatchydc.com|mercedsunstar.com|miamiherald.com|modbee.com|myrtlebeachonline.com|newsobserver.com|reuters.com|sacbee.com|sanluisobispo.com|star-telegram.com|sunherald.com|thenewstribune.com|theolympian.com|thestate.com|tri-cityherald.com|variety.com|w3schools.com
+app.kultivi.com,hollywoodreporter.com,huffpost.com,sacbee.com,tvline.com,w3schools.com#@#.cnx-player-wrapper
+app.kultivi.com,hollywoodreporter.com,huffpost.com,sacbee.com,tvline.com,w3schools.com#@#[id^="jwplayer"]
+@@||connatix.com/*connatix.player.$3p,script,domain=accesousa.com|accuweather.com|adweek.com|app.kultivi.com|bellinghamherald.com|bnd.com|bradenton.com|centredaily.com|charlotteobserver.com|easternstandardtimes.com|elnuevoherald.com|flkeysnews.com|fresnobee.com|heraldonline.com|heraldsun.com|hollywoodreporter.com|huffpost.com|idahostatesman.com|indiewire.com|islandpacket.com|interestingengineering.com|kansas.com|kansascity.com|kentucky.com|ledger-enquirer.com|loot.tv|macon.com|mahoningmatters.com|mcclatchydc.com|mercedsunstar.com|miamiherald.com|modbee.com|myrtlebeachonline.com|newsobserver.com|reuters.com|sacbee.com|sanluisobispo.com|star-telegram.com|sunherald.com|thenewstribune.com|theolympian.com|thestate.com|tri-cityherald.com|tvline.com|variety.com|w3schools.com
 @@||connatix.com/*.css$3p,css
 @@||cds.connatix.com/*/elLoader.$3p,script
 @@||cds.connatix.com/*/player.renderer.$3p,script
@@ -2149,7 +2140,6 @@ hihonor.com#@#.ad-wrap
 @@||collect.mopinion.com/assets/surveys/*/js/survey.min.js$script,domain=findmystreet.co.uk
 @@||deploy.mopinion.com^$script,xhr,domain=findmystreet.co.uk
 @@||googletagmanager.com/gtm.js$script,domain=findmystreet.co.uk
-filelu.com#@#.banner_ads:not(:empty)
 @@||click.allkeyshop.com/*&source=www.allkeyshop.com$doc
 *$1p,inline-script,script,domain=click.allkeyshop.com
 click.allkeyshop.com##+js(refresh-defuser)
@@ -2203,11 +2193,6 @@ goku.sx##.st-btn > img:style(margin: auto !important; display: block !important;
 @@||googletagmanager.com/gtm.js$script,domain=nykaa.com
 @@||cdn.pendo.io/agent/static/*/pendo.js$script,domain=adp.com
 @@||bat.bing.com/bat.js$script,domain=northwell.edu
-@@||cdn.segmentify.com^$css,image,script,domain=mediamarkt.com.tr
-@@||img.segmentify.com^$image,domain=mediamarkt.com.tr
-@@||per2.segmentify.com^$xhr,domain=mediamarkt.com.tr
-@@||googletagmanager.com/gtm.js$script,domain=mediamarkt.com.tr
-||googletagmanager.com/gtm.js?*&l=dataLayer$script,domain=mediamarkt.com.tr,important
 @@||vbt.io^$css,image,domain=landing.davidho.sg
 @@||challenges.cloudflare.com/turnstile/$3p,script
 ||analytics.google.com^$badfilter
@@ -2233,7 +2218,7 @@ eksisozluk.com##.ad-banner:remove()
 @@||googletagmanager.com/gtm.js$script,domain=lippu.fi
 @@||koshien-live.net/*/adtag.xml$xhr,domain=vk.sportsbull.jp
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=vk.sportsbull.jp,important
-/spacer.gif?$image,redirect-rule=1x1.gif
+/spacer.gif?$image,redirect=1x1.gif
 ||googleoptimize.com/optimize.js$domain=grasshopper.com,important
 grasshopper.com##+js(set, google_optimize, {})
 grasshopper.com##+js(set, google_optimize.get, noopFunc)
@@ -2330,8 +2315,9 @@ neurotray.com##+js(nano-stb, /EzoIvent|TDELAY/, 5000)
 @@||receiita.xyz^$popup,domain=animexhd.com
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,important,redirect=google-ima.js:5,domain=abczdrowie.pl|animezone.pl|chillizet.pl|claudia.pl|echirurgia.pl|elevensports.pl|elle.pl|elleman.pl|fm.tuba.pl|focusnauka.pl|games.cdn.famobi.com|glamour.pl|grydladzieci.pl|ipla.tv|ipla.tv|kobieta.pl|meloradio.pl|mojegotowanie.pl|mojpieknyogrod.pl|money.pl|national-geographic.pl|parenting.pl|partner.redefine.pl|playpuls.pl|pluscdn.pl|polsatgo.pl|polsatnews.pl|polsatsport.pl|przyslijprzepis.pl|radioplus.pl|radiozet.pl|sadeczanin.info|tvokazje.pl|tvp.pl|twojapogoda.pl|video.onnetwork.tv|videotarget.pl|wp.pl|wtk.pl|interia.pl|www.polsatnews.pl|autocentrum.pl
 virginmediatelevision.ie##+js(set, google.ima.dai, {})
-||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=virginmediatelevision.ie
-@@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$script,domain=virginmediatelevision.ie
+||imasdk.googleapis.com/js/sdkloader/ima3.js^$script,redirect=google-ima.js,domain=virginmediatelevision.ie
+@@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js^$script,domain=virginmediatelevision.ie
+virginmediatelevision.ie##+js(no-xhr-if, /froloa.js)
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=3bmeteo.com,important
 3bmeteo.com##+js(nano-sib, adv, *)
 ! [NSFW] https://deepnude.to/ - Missing "userid" and "identifier" cookies from FingerprintJS
@@ -2390,9 +2376,6 @@ help.cashctrl.com##+js(set, Origami.fastclick, noopFunc)
 @@||microsoft.com/*/aria-web-telemetry$script,1p
 ||hbb.afl.rakuten.co.jp^$badfilter
 ||hbb.afl.rakuten.co.jp^$3p
-! unbreak player
-*$script,3p,denyallow=cloudflare.com|googleapis.com,domain=javgg.club|javgg.net,badfilter
-*$script,3p,denyallow=cloudflare.com|fluidplayer.com|googleapis.com,domain=javgg.club|javgg.net
 ||quantcast.com^$badfilter
 @@||wurfl.io/wurfl.js$script,domain=keukenatlas.nl
 *.gif$image,redirect=1x1.gif,domain=holybooks.com,important
@@ -2408,6 +2391,7 @@ help.cashctrl.com##+js(set, Origami.fastclick, noopFunc)
 @@||vidaextra.com^$ghide
 vidaextra.com##.ad
 www.reddit.com,new.reddit.com##.subredditvars-r-ublockorigin [role="dialog"]>div:style(width: auto !important)
+www.reddit.com,sh.reddit.com##community-highlight-card[subreddit-prefixed-name="r/uBlockOrigin"][src]:remove-attr(src)
 @@||static.knowledgehub.com/global/images/ping.gif?$xhr,1p
 lumens.com##+js(set, _satellite, {})
 lumens.com##+js(set, _satellite.track, noopFunc)
@@ -2432,7 +2416,7 @@ lumens.com##+js(set, _satellite.track, noopFunc)
 ||munchkin.marketo.net/munchkin.js$script,important,redirect=noop.js,domain=st.com
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,3p,redirect=google-ima3,domain=humix.com|mistergadget.tech,important
 meijer.com#@#.product-grid__product:has(.product-tile__sponsored)
-/web-vitals.$script,redirect-rule=noopjs,domain=amazon.com
+/web-vitals.$script,redirect=noopjs,domain=amazon.com
 @@||amazonwebservicesinc.tt.omtrdc.net/m2/amazonwebservicesinc/ubox/raw$xhr,3p,domain=aws.amazon.com
 ||amazonwebservicesinc.tt.omtrdc.net/m2/amazonwebservicesinc/ubox/raw$xhr,3p,removeparam,domain=aws.amazon.com
 ||cdnwebonplay.gviet.vn/public/js/player/ads/ima3.js$script,3p,redirect=google-ima.js,domain=vtvcab.vn,important
@@ -2470,6 +2454,8 @@ socket.pearsoned.com##+js(set, initializeNewRelic, noopFunc)
 ||tiqcdn.com^$badfilter
 ||click.discord.com^$badfilter
 @@||jssdkcdns.mparticle.com/js/*/mparticle.js$script,domain=cwtv.com
+@@||googleadservices.com/pagead/conversion_async.js^$script,domain=cwtv.com
+@@||googletagmanager.com/gtm.js^$script,domain=cwtv.com
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=memurlar.net
 tntdrama.com##+js(set, turnerAnalyticsObj, {})
 tntdrama.com##+js(set, turnerAnalyticsObj.setVideoObject4AnalyticsProperty, noopFunc)
@@ -2504,7 +2490,6 @@ biologianet.com##+js(set-constant, __configuredDFPTags, {})
 @@||code.giraff.io/data/widget-vslv.js$script,domain=vs.lv
 @@||data.giraff.io/track/vslv.js$script,domain=vs.lv
 @@||a.giraff.io/data/*json$script,domain=vs.lv
-filelu.com#@#.banner_ads:not(.textads)
 ||cloudfront.net/$domain=allegro.pl,badfilter
 @@||jssdkcdns.mparticle.com/js/*/mparticle.js$script,domain=shudder.com
 10play.com.au##+js(set, moatPrebidApi, {})
@@ -2522,7 +2507,7 @@ realmadryt.pl##.rmpl-adsense-desktop
 *$image,domain=gouachebags.com,redirect-rule=1x1.gif
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$script,domain=globoplay.globo.com
 @@||ws.mmstat.com/ws|$websocket,domain=youku.tv
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$xhr,script,domain=nhl.com
+||imasdk.googleapis.com/js/sdkloader/ima3.js^$script,xhr,redirect=google-ima.js,domain=nhl.com
 reclameaqui.com.br##section#home > #hero.pinned:style(position: absolute !important;)
 reclameaqui.com.br###page-header > header:style(position: absolute !important;)
 ||guinsters286nedril.com^$badfilter
@@ -2582,18 +2567,9 @@ optimum.net##+js(set, s, {})
 optimum.net##+js(set, s.tl, noopFunc)
 @@||usabilla.com^$script,domain=nos.nl
 @@||jssdkcdns.mparticle.com/js/*/mparticle.js^$script,3p,domain=syfy.com
-pvrcinemas.com##+js(set, SalesforceInteractions, {})
-pvrcinemas.com##+js(set, SalesforceInteractions.CatalogObjectInteractionName)
+@@/evergage.min.js^$script,domain=pvrcinemas.com
 @@||hog.tv^$cname
 @@||fundingchoicesmessages.google.com/i/$script,domain=sudokugame.org
-howtogeek.com,makeuseof.com,xda-developers.com#@#+js(aopr, googletag)
-howtogeek.com,makeuseof.com,xda-developers.com#@#.adsninja-ad-zone
-howtogeek.com,makeuseof.com,xda-developers.com#@#.ad-current
-howtogeek.com,makeuseof.com,xda-developers.com#@#.ad-zone-container
-@@||cdn.adsninja.ca^$script,css,domain=howtogeek.com|makeuseof.com|xda-developers.com
-||imasdk.googleapis.com/js/sdkloader/ima3.js$script,3p,redirect=google-ima.js,domain=howtogeek.com|makeuseof.com|xda-developers.com,important
-||googletagservices.com/tag/js/gpt.js$domain=howtogeek.com|makeuseof.com|xda-developers.com,important
-||g.doubleclick.net/pagead/managed/js/gpt/$script,domain=howtogeek.com|makeuseof.com|xda-developers.com,important
 @@||imasdk.googleapis.com/pal/sdkloader/pal.js$script,domain=13tv.co.il
 13tv.co.il##+js(nano-stb, taboola timeout, *, 0.001)
 13tv.co.il##+js(nano-stb, clearInterval(run), 5000, 0.001)
@@ -2690,3 +2666,23 @@ forum.dji.com##+js(set, sensorsDataAnalytic201505, {})
 forum.dji.com##+js(set, sensorsDataAnalytic201505.track, noopFunc)
 ||forum.djicdn.com/static/js/sensorsdata.min.js$script,domain=forum.dji.com,important
 ||pubscholar.cn/static/common/fingerprint.js^$script,1p,redirect=fingerprint2.js,important
+@@||v.fwmrm.net/ad/*html5_live^$script,domain=channel4.com
+||v.fwmrm.net/ad/*html5_live^$script,removeparam=caid,domain=channel4.com
+@@||fundingchoicesmessages.google.com/i/pub-$script,domain=fanatik.com.tr|milliyet.com.tr|posta.com.tr
+@@||fundingchoicesmessages.google.com/f/$script,domain=fanatik.com.tr|milliyet.com.tr|posta.com.tr
+macrotrends.net##+js(set, clicky, {})
+macrotrends.net##+js(set, clicky.goal, noopFunc)
+code.world##+js(set, WURFL, {})
+@@||mpsnare.iesnare.com/snare.js^$script,domain=ridejetson.com
+||services.haaretz.co.il^$badfilter
+||services.haaretz.co.il^$from=~haaretz.co.il|~haaretz.com
+topgear.com##+js(set, _sp_.config.events.onSPPMObjectReady, noopFunc)
+@@||worldsurfleague.com/js/videojs8/nuevo/plugins/videojs-contrib-ads.min.js^$script,1p
+@@||micro.rubiconproject.com/prebid/dynamic/$script,domain=worldsurfleague.com
+@@||securepubads.g.doubleclick.net/pagead/ima_ppub_config$xhr,domain=worldsurfleague.com
+||pubads.g.doubleclick.net/gampad/ads?*www.worldsurfleague.com$xhr,redirect=noop-vmap1.0.xml:5,domain=imasdk.googleapis.com
+eservice.directauto.com##+js(set, gtm, {})
+eservice.directauto.com##+js(set, gtm.trackEvent, noopFunc)
+||imasdk.googleapis.com/js/sdkloader/ima3_debug.js$script,redirect=google-ima.js,domain=mais.sbt.com.br,important
+||wpfc.ml^$image,redirect=1x1.gif,domain=ht-instruments.de
+||trycloudflare.com^$badfilter

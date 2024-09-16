@@ -1,5 +1,5 @@
 ! Title: uBO Lite filters
-! Last modified: Sat, 10 Aug 2024 12:51:40 +0000
+! Last modified: Mon, 16 Sep 2024 18:45:37 +0000
 ! Expires: 4 days
 ! Description: Filters optimized for uBO Lite
 ! Homepage: https://github.com/uBlockOrigin/uAssets
@@ -7,6 +7,60 @@
 !
 ! GitHub issues: https://github.com/uBlockOrigin/uAssets/issues
 ! GitHub pull requests: https://github.com/uBlockOrigin/uAssets/pulls
+
+! START: Exceptions to generic cosmetic filters
+! https://github.com/uBlockOrigin/uBOL-home/issues/181
+
+! https://github.com/uBlockOrigin/uAssets/issues/24959
+@@||proininews.gr^$ghide
+proininews.gr##ins.adsbygoogle[data-ad-slot]
+proininews.gr##ins.adsbygoogle[data-ad-client]
+proininews.gr##.single-ads
+
+! https://github.com/uBlockOrigin/uAssets/issues/25086
+@@||idlixofficialx.net^$ghide
+
+! https://github.com/uBlockOrigin/uAssets/issues/25186
+@@||freehostbox.net^$ghide
+freehostbox.net##ins.adsbygoogle[data-ad-client]
+freehostbox.net##ins.adsbygoogle[data-ad-slot]
+
+! https://github.com/AdguardTeam/AdguardFilters/issues/176181
+@@||etude000.com^$ghide
+
+! https://github.com/easylist/easylist/commit/ac99f2f4f6577016f23a00bcf051cd8c4da2b60e
+@@||ads.nipr.ac.jp^$ghide
+
+! https://github.com/easylist/easylist/commit/e09a0ac417826dc8e3ee4189a799a794bb62d50a
+@@||mastersclub.jp^$ghide
+
+! https://github.com/AdguardTeam/AdguardFilters/issues/71177#issuecomment-752391555
+@@||javbix.com^$ghide
+
+! https://github.com/uBlockOrigin/uAssets/issues/24722
+@@||rpgbot.net^$ghide
+rpgbot.net##.bottomad
+rpgbot.net##span[id^="ezoic-pub-ad-placeholder-"]
+rpgbot.net##span[data-ez-ph-id]
+
+! https://github.com/AdguardTeam/AdguardFilters/issues/157584
+@@||mytempsms.com^$ghide
+mytempsms.com##ins.adsbygoogle[data-ad-slot]
+mytempsms.com##ins.adsbygoogle[data-ad-client]
+
+! https://github.com/uBlockOrigin/uAssets/issues/19519
+@@||ewybory.eu^$ghide
+ewybory.eu##ins.adsbygoogle[data-ad-slot]
+ewybory.eu##ins.adsbygoogle[data-ad-client]
+ewybory.eu##.footer_ad
+ewybory.eu##.middle_ad
+ewybory.eu##.header_ad
+ewybory.eu##[id^="aswift_"]
+
+! https://github.com/uBlockOrigin/uAssets/issues/25323
+@@||plutomovies.com^$ghide
+
+! END: Exceptions to generic cosmetic filters
 
 ! https://github.com/uBlockOrigin/uBOL-issues/issues/8
 ||pushbullet.com^$3p,badfilter
@@ -70,11 +124,24 @@ nsw2u.com##+js(aeld, , Adb)
 ! https://github.com/uBlockOrigin/uBOL-home/issues/157
 *$script,3p,from=minoplres.xyz,to=~jwpcdn.com
 
-! Ad-Shield
-! https://github.com/uBlockOrigin/uBOL-home/issues/166
-mydaily.co.kr,taxguru.in,reportera.co.kr,fourfourtwo.co.kr,wfmz.com,videogamemods.com,thestar.co.uk,yorkshirepost.co.uk,carscoops.com,dziennik.pl,eurointegration.com.ua,tweaksforgeeks.com,logicieleducatif.fr,onlinegdb.com,text-compare.com##+js(ra, onerror, script[onerror*="error-report.com"], asap stay)
-
 ! https://github.com/uBlockOrigin/uBOL-home/issues/177
 !#if env_chromium
 ||cbsnews.com^$csp=worker-src 'none'
+cbsnews.com##+js(rpnt, script, var CBSNEWS =, navigator.serviceWorker.getRegistrations().then((registrations=>{for(const registration of registrations){if(registration.scope.includes("cbsnews.com")){registration.unregister()}}}));var CBSNEWS =)
 !#endif
+
+! https://github.com/uBlockOrigin/uAssets/issues/24820
+!#if env_firefox
+empire-anime.*,empire-stream.*,empire-streaming.*,empire-streamz.*##+js(nowoif, , 0.3, blank)
+!#else
+empire-anime.*,empire-stream.*,empire-streaming.*,empire-streamz.*##+js(nowoif, , 0, blank)
+!#endif
+
+! https://github.com/uBlockOrigin/uAssets/issues/23471
+||ads-twitter.com^$frame,redirect=noopframe,domain=media.cms.markiza.sk
+
+! https://www.reddit.com/r/uBlockOrigin/comments/1fbun7c/adblock_detected_ubo_lite/ (hopefully)
+/yzfdmoan.js$script,redirect=noop.js,domain=maxstream.video|maxlinks.online|maxstreams.site|uprot.net
+
+! https://github.com/uBlockOrigin/uAssets/issues/25274
+://ads.$object,redirect=noopframe,domain=rtl.hr
