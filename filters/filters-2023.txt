@@ -5448,7 +5448,8 @@ sonixgvn.net##+js(aost, setTimeout, ads)
 sonixgvn.net##+js(no-fetch-if, /doubleclick|googlesyndication/, length:10, {"type": "cors"})
 sonixgvn.net##+js(aeld, DOMContentLoaded, overlays)
 sonixgvn.net##+js(acs, checkAdsBlocked)
-sonixgvn.net##+js(acs, setTimeout)
+sonixgvn.net##+js(acs, _0x3812)
+sonixgvn.net##+js(rmnt, script, defineProperty)
 sonixgvn.net##.su-note:style(display: block !important;)
 @@||sonixgvn.net^$script,1p
 @@*.js|$script,3p,domain=sonixgvn.net,denyallow=doubleclick.net|onesignal.com|vlitag.com|googletagmanager.com
